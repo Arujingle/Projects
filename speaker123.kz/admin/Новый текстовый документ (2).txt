@@ -1,0 +1,30 @@
+<?php 
+
+/* Подключение к базе данных */
+$db = mysql_connect("localhost", "root", "");
+Mysql_select_db("messages",$db);
+
+// Выборка и отображение записей
+
+$sql = mysql_query("SELECT * FROM users",$db);
+
+$table = "<table border='1' cellspacing='3' cellpadding='3'>";
+  while ($row = mysql_fetch_assoc($sql))
+   {
+       $table .= "<tr>";
+       $table .= "<td onclick='foo(this)'>".$row['id']."</td>";
+       $table .= "<td>".$row['full_name']."</td>";
+       $table .= "<td>".$row['telephone']."</td>";
+	   $table .= "<td>".$row['email']."</td>";
+$table .= "<td>".$row['level']."</td>";
+$table .= "<td>".$row['program_study']."</td>";
+$table .= "<td>".$row['form_study']."</td>";
+$table .= "<td>".$row['time_study']."</td>";
+       $table .= "</tr>";
+    }
+       $table .= "</table> ";
+      echo $table;
+
+?>
+
+?>

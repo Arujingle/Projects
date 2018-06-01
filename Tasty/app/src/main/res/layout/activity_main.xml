@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="@drawable/foodfr"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="96dp"
+        android:layout_marginTop="124dp"
+        android:bufferType="normal"
+        android:capitalize="none"
+        android:text="Eat It"
+        android:textColor="@android:color/black"
+        android:textSize="70dp"
+        app:fontFamily="cursive" />
+
+    <TextView
+        android:id="@+id/Slogan"
+        android:layout_width="248dp"
+        android:layout_height="142dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="174dp"
+        android:layout_marginEnd="18dp"
+        android:text="No matter where you are:whether you are at home,or in the office,or on the beach-we will find you and we will feed you!"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:fontFamily="cursive" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="83dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentLeft="true">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="SignUp"
+            android:textColor="@android:color/white"
+            app:buttonColor="@color/btnSignUp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnSignIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="SignUp"
+            android:textColor="@android:color/white"
+            app:buttonColor="@color/btnSignUp" />
+
+            android:text="Sign In" />
+
+    </LinearLayout>
+</RelativeLayout>

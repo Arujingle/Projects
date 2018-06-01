@@ -1,0 +1,137 @@
+﻿<meta http-equiv='Content-Type' content='text/html; charset=utf8'>
+<link rel="stylesheet" href="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/stylepromer.css" type="text/css" />
+<title>Тест на javascript | Блог sergey-oganesyan.ru</title>
+</head>
+<body>
+
+<style type="text/css">
+
+	.wrapper{
+		width: 600px;
+		height: 130px;
+		margin: 0 auto;
+		display: none;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+	}
+
+</style>
+
+<script type="text/javascript">
+
+	var countQuest = 0;
+	var plus = 0;
+	var test_start = 0;
+	
+	function check(num){
+	
+		if(num == 4){ 
+			
+			document.getElementById('area').style.display='block'; //
+			document.getElementById('start').style.display='none';
+			document.getElementById('end').style.display='inline';
+
+			if(test_start == 0){
+			
+					//Массив вопросов
+				var questions = ["Hello","Дом","Дерево","Homeland"];
+
+					//Массивы вариантов ответов
+				var number1 = ["Как дела","House","House"];	
+				var number2 = ["Привет","Cat","Door"];	
+				var number3 = ["Пока","Dog","Wall"];	
+				var number4 = ["Дом","Tree","Tree"];
+
+				document.getElementById('question').innerHTML=questions[countQuest];
+				
+				document.getElementById('option1').innerHTML=number1[countQuest];
+				document.getElementById('option2').innerHTML=number2[countQuest];
+				document.getElementById('option3').innerHTML=number3[countQuest];
+				document.getElementById('option4').innerHTML=number4[countQuest];
+				
+					//Массив правильных ответов
+				var answer = [1,0,3,1,0,3,0];
+				
+				test_start = 1;	
+			}
+		}
+		else{
+					//Массив вопросов
+			var questions = ["Hello","Дом","Дерево","Homeland","Mother","She likes living in Spain, …?","Keep in a cold place","I go to school...","I haven't got .... money.",".... milk in the fridge."];
+			
+				//Массивы вариантов ответов
+			var number1 = ["Как дела","House","House","Природа","Мама","is she?","on clothes", "on bicycle"," some","There isn't no"];	
+			var number2 = ["Привет","Cat","Door","Родина","Папа","isn´t she?","on food", "by bicycle", "no","There are no"];	
+			var number3 = ["Пока","Dog","Wall","Остров","Дядя","do she?","on a book", "in bicycle"," any"," There is any"];	
+			var number4 = ["Дом","Tree","Tree","Планета","Дочь","doesn’t she?","on furniture","with bicycle","a little"," There isn't any"];	
+			
+				//Массив правильных ответов
+			var answer = [1,0,3,1,0,3,0,1,2,3];
+			
+			if(num == answer[countQuest]) plus++;
+			
+			if(questions.length - 1> countQuest){
+
+				countQuest++;
+				
+				document.getElementById('question').innerHTML=questions[countQuest];
+			
+				document.getElementById('option1').innerHTML=number1[countQuest];
+				document.getElementById('option2').innerHTML=number2[countQuest];
+				document.getElementById('option3').innerHTML=number3[countQuest];
+				document.getElementById('option4').innerHTML=number4[countQuest];
+
+			}
+			else{ 
+			
+				document.getElementById('area').style.display='none';
+			
+				if( plus  > 2 ) alert(' У Вас ' + plus + ' правильных ответа! Ваш уровень "Beginner" ');
+                 if( plus  > 4) alert(' У Вас ' + plus + ' правильных ответа! Ваш уровень "Elementary"');
+                 if( plus  > 5 ) alert(' У Вас ' + plus + ' правильных ответа! Ваш уровень "Pre-Intermediate"');
+				 if( plus  > 7 ) alert(' У Вас ' + plus + ' правильных ответа! Ваш уровень "Intermediate"');
+				 if( plus  > 8 ) alert(' У Вас ' + plus + ' правильных ответа! Ваш уровень "Upper-Intermediate"');
+                 if( plus  > 9 ) alert(' У Вас ' + plus + ' правильных ответа! Ваш уровень "Advanced"');
+			
+			}
+			
+		}
+	}
+	
+</script>
+
+	<div style="margin-top: 200px;">
+
+		<div id="area" class="wrapper">
+
+			<center>			
+			
+				<p style="font-size: 38px;font-weight: bold;padding-top: 2px;color: #fff;" id="question"></p>
+				
+				<button onClick="check(0)" class="myButton" id="option1"></button>
+				
+				<button onClick="check(1)" class="myButton" id="option2"></button>
+				
+				<button onClick="check(2)" class="myButton" id="option3"></button>
+				
+				<button onClick="check(3)" class="myButton" id="option4"></button>
+			
+			</center>
+
+		</div>
+	
+	</div>	
+	
+	<br><center>
+		<button id="start" class="myButton" onClick="check(4)">Приступить к тесту</button>
+		<script type="text/javascript"> var curent_url = document.URL; document.write("<a id='end' style='display: none;' class='myButton' href='" + curent_url + "'>Начать сначала</a>"); </script>	
+	</center>
+	
+	<br><br><center><br>
+		<a href="about.php" class="myButton"> Вернуться к статье</a> 
+		<a href="index.php" class="myButton">Главное</a>
+	</center>
+
+</body>
+</html>

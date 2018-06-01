@@ -1,0 +1,44 @@
+﻿<?php
+
+if(isset($_POST[q1]) && isset($_POST[q2])){
+$ot = 0;
+$not = 0;
+if ($_POST[q1] == a){$ot++;} else {$not++;}
+if ($_POST[q2] == a){$ot++;} else {$not++;}
+
+}
+?>
+
+Здесь, выводим их (тоже с проверкой):
+
+<?php if($not != 0 & $ot !=0){ ?>
+<p>Правильных ответов: <?php echo $ot; ?>
+
+
+<p>Неправильных ответов: <?php echo $not; ?>
+
+
+<?php } ?>
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+<form action="" method="POST">
+<div>
+    <p>Сколько будет 2 + 2?</p>
+    <label><input name="q1" type="radio" value="a">3</label>
+    <label><input name="q1" type="radio" value="b">2</label>
+    <label><input name="q1" type="radio" value="c">1</label>
+</div>
+<div>
+    <p>Сколько будет 5 - 2?</p>
+    <label><input name="q2" type="radio" value="a">3</label> 
+    <label><input name="q2" type="radio" value="b">2</label>
+    <label><input name="q2" type="radio" value="c">1</label>
+</div>
+<button type="submit">Результат</button>
+</form>
+
+</body>
+</html>

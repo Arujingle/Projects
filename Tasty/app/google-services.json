@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "114112833545",
+    "firebase_url": "https://tasty-35a11.firebaseio.com",
+    "project_id": "tasty-35a11",
+    "storage_bucket": "tasty-35a11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114112833545:android:686a2608bb9c3966",
+        "android_client_info": {
+          "package_name": "com.example.eatit.tasty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114112833545-dn7u1dnbemc08mj2vlpb516spcutt5uo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eatit.tasty",
+            "certificate_hash": "f7c4c429e7705bbbe02badf121c45fcd987bccfc"
+          }
+        },
+        {
+          "client_id": "114112833545-nv9cctfcug8ik25tgcssnjdkabvn4qgt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf2are2AYVlouaDiHpjynuIBas43pTz-k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114112833545-nv9cctfcug8ik25tgcssnjdkabvn4qgt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

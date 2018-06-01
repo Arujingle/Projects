@@ -1,0 +1,257 @@
+.header ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:5px; /*делаем отступ сверху*/
+  background:#FF4444; /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
+  height: 100px; 
+  font-size:25px;/*задаем высоту*/
+  align:center;
+}
+.header a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#FF4444; /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:20px 15px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+  
+ 
+}
+.header a:hover {
+  background:#D43737;/*добавляем эффект при наведении*/
+}
+.header li {
+  float:right; /*Размещаем список горизонтально для реализации меню*/
+}
+
+.frase{
+font-style: bold;
+      font-family:"Kaushan Script", cursive;
+     padding: 0 20px;
+    position: relative;
+    z-index: 30;
+    text-align: center;
+    color:#FF0000;
+    font-size: 72px;
+    max-width: 800px;
+    margin: 300px auto 72px;
+	display:block;
+	padding-bottom:200px;
+	}
+
+.salad{position:absolute;
+width:100%;
+opacity:.7;
+background:#000;
+height:900px;
+   
+
+}
+.logo{align:left;
+width:200px;
+height:100px;
+}
+
+
+ .footer{
+ paddding:50px;
+ 
+ position:relative;
+    color: white;
+    background-color:#4F4F4F;
+    bottom:0;
+    text-align: center;
+	display: block;
+	height:100px;}
+	
+	.formenu{width:100%;
+	height:350px;
+	position:absolute;
+	    background-position: 50% 50%;
+		opacity:0.7}
+		
+		
+		.content{position:relative;
+		font-size:85px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-weight:bold;
+		text-align:center;
+		font-style: bold;
+      font-family:"Kaushan Script", cursive;
+     padding: 0 20px;
+    position: relative;
+  
+  
+    color:#FF0000;
+    
+    max-width: 800px;
+    margin: 300px auto 72px;
+	display:block;
+	padding:100px;		}
+	
+	
+	.listmenu{
+	float:right;
+	margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+     max-width: 1500px; 
+    font-size: 24px;
+    display: inline-block;
+	}
+	
+	
+	.listmenu li{width: 120px; 
+    height: 52px;
+    line-height: 52px;
+    color: #603325;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 10px;
+	}
+	
+	.meals img {
+	border:2px solid red; 
+width:250px; 
+height:250px; 
+ 
+
+ 
+border-radius: 7px; 
+}
+.menucontent{
+align:left;
+    float:center;
+}
+.busket1{
+    background-size: 25px 25px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    left: 20%;
+    margin-right: -420px;
+    top: 30px;
+}
+
+.cost-outer{color:#FFFF00;
+    background: #fff;
+    height: 20px;
+    line-height: 37px;
+    margin-left: 45px;
+    padding: 10px 10px;
+	top:30px;
+	position: absolute;
+	left: 20%;
+	background-size: 20px 20px;
+}
+.cover {
+    background:#CCC; 
+    width:380px; 
+    margin:auto; 
+    padding-left:20px;
+}
+ 
+h2.contact { 
+    padding-left: 5px; 
+    font-size: 40px; 
+    color: #ff5400; 
+    height: 105px; 
+    background: url(images/contact.png) no-repeat -10px -10px;  
+    font-family: sans-serif;
+}
+ 
+p.contact { 
+    font-size: 24px; 
+    margin-bottom: 5px; 
+    line-height: 36px; 
+    font-family: sans-serif, Arial; 
+    color: #4b4b4b; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); 
+}
+ 
+#contact {
+    margin-bottom: 0px; 
+}
+ 
+input[type="text"] {
+    width: 300px; 
+}
+ 
+textarea { 
+    width: 350px; 
+    height: 300px; 
+}
+ 
+label { 
+    color: #ff5400; 
+}
+ 
+input, textarea { 
+    background-color: rgba(255, 255, 255, 0.4); 
+    border: 5px solid rgba(122, 192, 0, 0.15); 
+    padding: 10px; 
+    font-family: Keffeesatz, Arial; 
+    color: #4b4b4b; 
+    font-size: 24px; 
+    -webkit-border-radius: 5px;
+    margin-bottom: 10px;
+   
+}
+ 
+input:focus, textarea:focus { 
+    border: 5px solid #ff5400; 
+    background-color: rgba(255, 255, 255, 1);
+}
+ 
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    background-color: #7ac000;
+    padding: 5px 36px 8px 36px;
+ 
+}
+ 
+input[type="submit"]:hover {
+    color: #fff; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4); 
+    background-color: #ff5400;
+   
+}
+ 
+input[type="submit"]:active { 
+    top: 1px; 
+}
+
+.gtco-contact-info{
+
+
+position: absolute;
+right: 50px;
+width: 300px;
+font-size:24px;
+font-family:Georgia, "Times New Roman", Times, serif;
+top: 100px;
+bottom: 50px;
+color:#FF0000;}
+
+.left-side img{
+position: absolute;
+left: 10px;
+width: 420px;
+height:400px;
+top: 140px;
+
+}
+
+.adcontent{width:100%;
+height:500px;}
+	
+	
+	
+	
+	

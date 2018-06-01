@@ -1,0 +1,57 @@
+<html>
+<body>
+ <meta charset="utf-8">
+ <div class = "header">
+ 
+ <link rel="stylesheet" type="text/css" href="style.css" />
+<ul>
+<li><a href="Contact.html">Контакты</a></li>
+<li><a href="#">Услуги</a></li>
+<li><a href="multitabshop.php">Меню</a></li>
+<li><a href="index.html">Главная</a></li>
+<li><a href="admin.html">Admin page</a></li>
+
+
+
+
+</ul>
+</div>
+
+<img src = "prawn-caesar-salad.jpg" class ="salad">
+<img src = "tort-napoleon-samij-vkusnij.jpg" class ="salad">
+<img src = "fon-winter.jpg" class ="salad">
+<script>
+
+
+
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("salad");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+
+<div class ="frase">
+<h>"Секрет успешной жизни, есть то что нравиться"</h>
+
+</div>
+
+
+<div class ="footer">Website of appetite in Kz 2017</div>
+
+</body>
+</html>
